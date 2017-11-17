@@ -1,0 +1,64 @@
+@font-face {
+    font-family: Semibold;
+    src: url("SF-UI-Display-Semibold.otf") format("opentype");
+}
+
+.button{
+  background: rgba(0,0,0,0);
+  border: none;
+  font-family: Semibold;
+  font-weight: bold;
+}
+
+.buttons{
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container{
+  height: 99vh;
+  width: 99vw;
+}
+
+.frame{
+  margin: 0 auto;
+  text-align: center;
+  width: 275px;
+  height: 400px;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
+  border: 0.5px solid lightgray;
+}
+
+#photo{
+  width: 100%;
+  height: 100%;
+}
+
+#brand-name{
+  margin-top: 5%;
+  font-size: 4em;
+  color: red;
+  text-align: center;
+  font-weight: bold;
+  font-family: Semibold;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  filter: drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.25));
+}
+
+#left-btn{
+  margin: 0 auto;
+  display: inline;
+  width: 135px;
+  height: 70px;
+  /*float: left;*/
+  background-color: red;
+}
+
+#right-btn{
+  margin: 0 auto;
+  display: inline;
+  width: 135px;
+  height: 70px;
+  /*float: right;*/
+  background-color: lightgreen;
+}
