@@ -4,6 +4,7 @@
 }
 
 .button{
+  font-size: 4em;
   background: rgba(0,0,0,0);
   border: none;
   font-family: Semibold;
@@ -23,20 +24,14 @@
 .frame{
   margin: 0 auto;
   text-align: center;
-  width: 275px;
-  height: 400px;
+  width: 85vw;
+  height: 80vh;
   filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
   border: 0.5px solid lightgray;
 }
 
-#photo{
-  width: 100%;
-  height: 100%;
-}
-
 #brand-name{
-  margin-top: 5%;
-  font-size: 4em;
+  font-size: 8em;
   color: red;
   text-align: center;
   font-weight: bold;
@@ -45,20 +40,29 @@
   filter: drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.25));
 }
 
+#drink{
+  font-size: 20px;
+}
+
 #left-btn{
   margin: 0 auto;
   display: inline;
-  width: 135px;
-  height: 70px;
+  width: 41vw;
+  height: 10vh;
   /*float: left;*/
   background-color: red;
+}
+
+#photo{
+  width: 100%;
+  height: 100%;
 }
 
 #right-btn{
   margin: 0 auto;
   display: inline;
-  width: 135px;
-  height: 70px;
+  width: 41vw;
+  height: 10vh;
   /*float: right;*/
   background-color: lightgreen;
 }
