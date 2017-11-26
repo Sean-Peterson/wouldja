@@ -27,11 +27,30 @@ var runIt = function(){
     var min = 0;
     var random = Math.floor(Math.random() * (max - min + 1)) + min;
     var picture = 'css/imgs/'+current[random]+'.jpg';
-    console.log(picture);
     stack[current[random]].shown=true;
     return picture;
   }else {
-    alert("you win")
+    if (counter==0) {
+      alert("You said yes to all of those...? Maybe this game worked too well... Anyways, congratulations and may you wake up next to what you deserve.");
+    }else if (counter==1){
+      alert("Looks like you have just "+counter+" drink. Your odds of waking up next to a 3 are high. Stop drinking or you'll end up on barstool sports.");
+    }else if (counter>1&&counter<5) {
+      alert("Drink "+counter+" times. You're pretty buzzed rn. I'd slow down. That or you have terribly low standards.");
+    }else {
+      alert("You have "+counter+" drinks. Ur standards are too high. Look in the mirror. Should you be this choosy. The answer is no.");
+    }
+    start();
+    counter = 1;
+  }
+}
+var counter = 1;
+var nope = function(){
+  count = counter++;
+  if (count > 1) {
+    return count + " drinks, bitch";
+  }else {
+    return count + " drink, bitch";;
+
   }
 }
 
@@ -40,7 +59,9 @@ $(document).ready(function(){
   $('#left-btn').on({
     'click': function(){
       var picture = runIt();
+      var count = nope();
       $('#photo').attr('src',picture);
+      $('#nope').text(count);
     }
   });
   $('#right-btn').on({

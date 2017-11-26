@@ -49,8 +49,11 @@
   display: inline;
   width: 41vw;
   height: 10vh;
-  /*float: left;*/
   background-color: red;
+}
+
+#nope{
+  font-size: .25em;
 }
 
 #photo{
