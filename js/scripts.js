@@ -32,12 +32,12 @@ var runIt = function(){
   }else {
     if (counter==0) {
       alert("You said yes to all of those...? Maybe this game worked too well... Anyways, congratulations and may you wake up next to what you deserve.");
-    }else if (counter==1){
+    }else if (counter>0&&counter<3){
       alert("Looks like you have just "+counter+" drink. Your odds of waking up next to a 3 are high. Stop drinking or you'll end up on barstool sports.");
-    }else if (counter>1&&counter<5) {
+    }else if (counter>3&&counter<5) {
       alert("Drink "+counter+" times. You're pretty buzzed rn. I'd slow down. That or you have terribly low standards.");
     }else {
-      alert("You have "+counter+" drinks. Ur standards are too high. Look in the mirror. Should you be this choosy. The answer is no.");
+      alert("You have "+counter+" drinks. Ur standards are too high. Look in the mirror. Should you be this choosy?");
     }
     start();
     counter = 1;
