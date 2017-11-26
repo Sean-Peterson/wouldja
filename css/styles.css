@@ -24,21 +24,12 @@
 .frame{
   margin: 0 auto;
   text-align: center;
-  width: 85vw;
-  height: 80vh;
+  width: 75vw;
+  height: 69vh;
   filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
   border: 0.5px solid lightgray;
 }
 
-#brand-name{
-  font-size: 8em;
-  color: red;
-  text-align: center;
-  font-weight: bold;
-  font-family: Semibold;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  filter: drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.25));
-}
 
 #drink{
   font-size: 20px;
@@ -50,6 +41,17 @@
   width: 41vw;
   height: 10vh;
   background-color: red;
+}
+
+#logo{
+  margin-top: 6vh;
+  font-size: 8em;
+  color: red;
+  text-align: center;
+  font-weight: bold;
+  font-family: Semibold;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  filter: drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.25));
 }
 
 #nope{
