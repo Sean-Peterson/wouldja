@@ -55,19 +55,41 @@ var nope = function(){
 }
 
 $(document).ready(function(){
-  start();
+  $('#start').on({
+    'click': function(){
+      start();
+      var picture = runIt();
+      $('#photo').attr('src',picture);
+      $('.frame').removeClass('hidden');
+      $('.buttons').removeClass('hidden');
+      $('.instructions').addClass('hidden');
+    }
+  });
   $('#left-btn').on({
     'click': function(){
       var picture = runIt();
       var count = nope();
-      $('#photo').attr('src',picture);
-      $('#nope').text(count);
+      if (picture == undefined) {
+        $('.frame').addClass('hidden');
+        $('.buttons').addClass('hidden');
+        $('.instructions').removeClass('hidden');
+      }else {
+        $('#photo').attr('src',picture);
+        $('#nope').text(count);
+      }
     }
   });
   $('#right-btn').on({
     'click': function(){
       var picture = runIt();
-      $('#photo').attr('src',picture);
+      if (picture == undefined) {
+        $('.frame').addClass('hidden');
+        $('.buttons').addClass('hidden');
+        $('.instructions').removeClass('hidden');
+      }else {
+        $('#photo').attr('src',picture);
+      }
+
     }
   });
 

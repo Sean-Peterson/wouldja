@@ -30,6 +30,10 @@
   border: 0.5px solid lightgray;
 }
 
+.instructions{
+  text-align: center;
+  font-family: Semibold;
+}
 
 #drink{
   font-size: 20px;
@@ -63,6 +67,11 @@
   height: 100%;
 }
 
+#question{
+  margin-top: 20vh;
+  font-size: 8em;
+}
+
 #right-btn{
   margin: 0 auto;
   display: inline;
@@ -70,4 +79,11 @@
   height: 10vh;
   /*float: right;*/
   background-color: lightgreen;
+}
+
+#start{
+  margin-top: 15vh;
+  height: 10vh;
+  width: 60vw;
+  font-size: 8em;
 }
