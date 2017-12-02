@@ -73,6 +73,7 @@ $(document).ready(function(){
         $('.frame').addClass('hidden');
         $('.buttons').addClass('hidden');
         $('.instructions').removeClass('hidden');
+        $('#nope').text('');
       }else {
         $('#photo').attr('src',picture);
         $('#nope').text(count);
@@ -86,6 +87,7 @@ $(document).ready(function(){
         $('.frame').addClass('hidden');
         $('.buttons').addClass('hidden');
         $('.instructions').removeClass('hidden');
+        $('#nope').text('');
       }else {
         $('#photo').attr('src',picture);
       }
