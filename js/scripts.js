@@ -31,25 +31,26 @@ var runIt = function(){
     return picture;
   }else {
     if (counter==0) {
-      alert("You said yes to all of those...? Maybe this game worked too well... Anyways, congratulations and may you wake up next to what you deserve.");
+      alert("Yes to all of those? Even snacks girl? Fuck, man. Good luck. Bye.");
     }else if (counter>0&&counter<3){
-      alert("Looks like you have just "+counter+" drink. Your odds of waking up next to a 3 are high. Stop drinking or you'll end up on barstool sports.");
-    }else if (counter>3&&counter<5) {
-      alert("Drink "+counter+" times. You're pretty buzzed rn. I'd slow down. That or you have terribly low standards.");
+      alert("Looks like you have just "+counter+" drink. Your odds of waking up next to a 3 are high. Stop drinking or you may end up on barstool sports.");
+    }else if (counter>3&&counter<=5) {
+      alert("Drink "+counter+" times. You're pretty buzzed rn. I'd slow down if you don't wanna end up with an ugo.");
     }else {
-      alert("You have "+counter+" drinks. Ur standards are too high. Look in the mirror. Should you be this choosy?");
+      alert("Ur standards are too high. Look in the mirror. Should you be this choosy? Take your "+counter+" drinks. It should help.");
     }
     start();
-    counter = 1;
+    counter = 0;
   }
 }
-var counter = 1;
+var counter = 0;
 var nope = function(){
-  count = counter++;
-  if (count > 1) {
-    return count + " drinks, bitch";
+  counter++;
+  console.log(counter);
+  if (counter > 1) {
+    return counter + " drinks, bitch";
   }else {
-    return count + " drink, bitch";;
+    return counter + " drink, bitch";;
 
   }
 }
